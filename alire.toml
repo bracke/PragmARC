@@ -8,3 +8,10 @@ maintainers-logins = ["bracke"]
 licenses = "BSD-3-Clause"
 website = "https://github.com/jrcarter/PragmARC"
 tags = []
+
+[build-switches]
+"*".style_checks = "No"
+"*".ada_version = "Ada12"
+
+[[depends-on]]
+gnat = "<13.0 | >=13.3"
