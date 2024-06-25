@@ -13,5 +13,5 @@ tags = []
 "*".style_checks = "No"
 "*".ada_version = "Ada12"
 
-[[depends-on]]
+[[depends-on]] # Avoid bug in GNAT 13
 gnat = "<13.0 | >=13.3"
