@@ -6,7 +6,7 @@ authors = ["Jeff Carter"]
 maintainers = ["Bent Bracke <bent@bracke.dk>"]
 maintainers-logins = ["bracke"]
 licenses = "BSD-3-Clause"
-website = "https://github.com/jrcarter/PragmARC"
+website = "https://github.com/bracke/PragmARC"
 tags = []
 
 [build-switches]
