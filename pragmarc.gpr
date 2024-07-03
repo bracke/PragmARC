@@ -1,6 +1,5 @@
 with "config/pragmarc_config.gpr";
 project Pragmarc is
-
    for Library_Name use "Pragmarc";
    for Library_Version use Project'Library_Name & ".so." & Pragmarc_Config.Crate_Version;
 
@@ -9,10 +8,10 @@ project Pragmarc is
    for Create_Missing_Dirs use "True";
    for Library_Dir use "lib";
 
-   type Library_Type_Type is ("relocatable", "static", "static-pic");
-   Library_Type : Library_Type_Type :=
+   type Kind_ID is ("relocatable", "static", "static-pic");
+   Kind : Kind_ID :=
      external ("PRAGMARC_LIBRARY_TYPE", external ("LIBRARY_TYPE", "static"));
-   for Library_Kind use Library_Type;
+   for Library_Kind use Kind;
 
    package Compiler is
       for Default_Switches ("Ada") use Pragmarc_Config.Ada_Compiler_Switches;
@@ -25,5 +24,4 @@ project Pragmarc is
    package Install is
       for Artifacts (".") use ("share");
    end Install;
-
 end Pragmarc;
