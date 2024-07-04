@@ -1,6 +1,6 @@
 with "config/pragmarc_config.gpr";
-project Pragmarc is
-   for Library_Name use "Pragmarc";
+project PragmARC is
+   for Library_Name use "PragmARC";
    for Library_Version use Project'Library_Name & ".so." & Pragmarc_Config.Crate_Version;
 
    for Source_Dirs use ("src/", "config/");
@@ -24,4 +24,4 @@ project Pragmarc is
    package Install is
       for Artifacts (".") use ("share");
    end Install;
-end Pragmarc;
+end PragmARC;
