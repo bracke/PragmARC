@@ -7,7 +7,7 @@ maintainers = ["Bent Bracke <bent@bracke.dk>"]
 maintainers-logins = ["bracke"]
 licenses = "BSD-3-Clause"
 website = "https://github.com/bracke/PragmARC"
-tags = ["cards","conversions","datastructures","encryption","matching","randomness","safety","sorting","taskcommunication","tty","unboundednumbers", "containers"]
+tags = ["cards","conversions","datastructures","encryption","matching","randomness","safety","sorting","tty","containers"]
 
 [build-switches]
 "*".style_checks = "No"
