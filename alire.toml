@@ -1,6 +1,6 @@
 name = "pragmarc"
 description = "The PragmAda Reusable Components"
-version = "20240323"
+version = "20240810"
 
 authors = ["Jeff Carter"]
 maintainers = ["Bent Bracke <bent@bracke.dk>"]
